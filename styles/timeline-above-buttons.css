@@ -1,3 +1,28 @@
+/* Container auf Spalten-Layout setzen (Standard-Richtung) */
+.videoOsdBottom {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-bottom: 15px !important;
+}
+
+/* 1. Buttons nach oben (Reihenfolge 1) */
+.videoOsdBottom .osdControls {
+    order: 1 !important;
+    margin-bottom: 15px !important; /* Abstand nach unten zur Timeline */
+}
+
+/* 2. Zeitleiste nach unten (Reihenfolge 2) */
+.videoOsdBottom .osdSeekBarContainer {
+    order: 2 !important;
+    width: 100% !important;
+    padding-left: 20px !important;  /* Seitlicher Abstand für ElegantFin-Optik */
+    padding-right: 20px !important;
+}
+
+/* Zeitanzeige korrekt ausrichten */
+.videoOsdBottom .osdTimeText {
+    margin-top: 0 !important;
+}
 /* Zeitleiste oberhalb der Buttons platzieren */
 .videoOsdBottom {
     display: flex !important;
