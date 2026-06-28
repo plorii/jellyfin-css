@@ -1,0 +1,18 @@
+/* Zeitleiste oberhalb der Buttons platzieren */
+.videoOsdBottom {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    padding-bottom: 20px !important;
+}
+
+/* Sichert, dass die Zeitleiste volle Breite hat */
+.osdSeekBarContainer {
+    width: 100% !important;
+    order: 1 !important;
+}
+
+/* Hauptbedienelemente (Buttons) unter die Zeitleiste schieben */
+.videoOsdBottom-maincontrols {
+    order: 2 !important;
+    margin-top: 10px !important;
+}
