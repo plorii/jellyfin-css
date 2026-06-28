@@ -1,43 +1,27 @@
-/* Container auf Spalten-Layout setzen (Standard-Richtung) */
+/* Das Grid-Layout von ElegantFin aufheben */
 .videoOsdBottom {
     display: flex !important;
     flex-direction: column !important;
-    padding-bottom: 15px !important;
-}
-
-/* 1. Buttons nach oben (Reihenfolge 1) */
-.videoOsdBottom .osdControls {
-    order: 1 !important;
-    margin-bottom: 15px !important; /* Abstand nach unten zur Timeline */
-}
-
-/* 2. Zeitleiste nach unten (Reihenfolge 2) */
-.videoOsdBottom .osdSeekBarContainer {
-    order: 2 !important;
-    width: 100% !important;
-    padding-left: 20px !important;  /* Seitlicher Abstand für ElegantFin-Optik */
-    padding-right: 20px !important;
-}
-
-/* Zeitanzeige korrekt ausrichten */
-.videoOsdBottom .osdTimeText {
-    margin-top: 0 !important;
-}
-/* Zeitleiste oberhalb der Buttons platzieren */
-.videoOsdBottom {
-    display: flex !important;
-    flex-direction: column-reverse !important;
+    height: auto !important;
     padding-bottom: 20px !important;
 }
 
-/* Sichert, dass die Zeitleiste volle Breite hat */
-.osdSeekBarContainer {
-    width: 100% !important;
+/* 1. Knöpfe nach oben zwingen */
+.videoOsdBottom .osdControls {
     order: 1 !important;
+    width: 100% !important;
+    margin-bottom: 15px !important; /* Abstand nach unten zur Timeline */
 }
 
-/* Hauptbedienelemente (Buttons) unter die Zeitleiste schieben */
-.videoOsdBottom-maincontrols {
+/* 2. Zeitleiste nach unten zwingen */
+.videoOsdBottom .osdSeekBarContainer {
     order: 2 !important;
-    margin-top: 10px !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Zeitanzeige (0:10 und -2:29:44) anpassen */
+.videoOsdBottom .osdTimeText {
+    margin-top: 0 !important;
 }
